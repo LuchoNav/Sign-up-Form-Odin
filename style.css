@@ -1,32 +1,66 @@
-﻿*  {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
 
 .left-side {
     position: relative;
     width: 40%;
     height: 100vh;
+    background-image: url("nick-nice-l7lTd1OBkp0-unsplash.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a1a; 
 }
 
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-p {
+.card-container {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.odin-logo {
+    width: 80px;
+    height: auto;
+}
+
+.card-container p {
+    font-size: 4rem;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #f9fafb;
+}
+
+.left-side footer {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
     width: 100%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f9fafb;
 }
