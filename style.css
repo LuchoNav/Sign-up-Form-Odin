@@ -53,12 +53,9 @@ body {
     height: auto;
 }
 
-.right-side {
-    flex: 1;
-    background-color: #f9fafb;
-}
 
-.left-side footer {
+
+.left-side .ref {
     position: absolute;
     bottom: 15px;
     left: 0;
@@ -68,7 +65,43 @@ body {
     font-size: 1.2rem;
 }
 
-footer a {
+.ref a {
     text-decoration: none;
     color: #f9fafb;
+}
+
+
+
+/*-------------------------------- RIGHT SIDE---------------------------*/
+
+.right-side {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+}
+
+
+.signup-content {
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-element {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
 }
