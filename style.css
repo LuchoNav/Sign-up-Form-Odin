@@ -81,14 +81,18 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f9fafb;
+    gap: 100px; 
+    padding-bottom: 100px;
 }
 
 .text {
+    align-self: stretch;  
+    max-width: 700px;
     display: flex;
-    transform: translateY(-200px);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    padding: 30px;
+    padding: 20px;
+    margin-left: 20px;
 }
 
 .signup-content {
@@ -104,12 +108,15 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
+    max-width: 800px;
+    margin-left: 20px;
 }
 
 .row {
+    padding-top: 15px;
     display: flex;
-    gap: 10px;
+    gap: 80px;
 }
 
 .input-element {
@@ -129,9 +136,3 @@ input:focus {
     border-color: blue;
     outline: none 
     }
-
-    label {
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    color: #555;
-}
