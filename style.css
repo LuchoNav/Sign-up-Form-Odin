@@ -75,19 +75,31 @@ body {
 /*-------------------------------- RIGHT SIDE---------------------------*/
 
 .right-side {  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-}
-
-
-.signup-content {
-    background-color: #f9fafb;
+    width: 60%;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
 }
+
+.text {
+    display: flex;
+    transform: translateY(-200px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.signup-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.09); 
+}
+
 
 .form {
     display: flex;
@@ -104,4 +116,22 @@ body {
     flex-direction: column;
     display: flex;
     flex: 1;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 10px;
+    padding: 10px;
+}
+input:focus {
+    border-color: blue;
+    outline: none 
+    }
+
+    label {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #555;
 }
