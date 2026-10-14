@@ -143,3 +143,13 @@ input:focus {
         color: rgb(50, 50, 50);
         font-size: 16px;
     }
+
+.input-element input[type="password"]:user-invalid {
+    border: 2px solid rgb(220, 50, 50);
+    outline: none;
+}
+
+
+.input-element input[type="password"]:user-valid {
+    border: 2px solid rgb(50, 180, 50);
+}
