@@ -153,3 +153,32 @@ input:focus {
 .input-element input[type="password"]:user-valid {
     border: 2px solid rgb(50, 180, 50);
 }
+
+.form-action {
+    display: flex;
+    margin-right: auto;
+    padding-left: 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    padding: 15px 50px;
+    background-color: #27A6D1;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-action p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-action a {
+    text-decoration: none;
+    color: #27A6D1;
+    font-weight: 700;
+}
